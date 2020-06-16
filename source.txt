@@ -1,0 +1,46 @@
+program Main;
+{Declaration of Global variables}
+var x,y,result: integer;
+{Procedure}
+procedure Alpha(a : integer);{Math function}
+var i:integer;
+begin
+x:=7 + 3 * (10 / (12 / (3 + 1) - 1)) / (2 + 3) - 5 - 3 + (8);{Result = 10}
+y:=-7 + (-3 + - -2);{Result = -8}
+end;
+{Procedure}
+procedure Print; {Print values until ....}
+var h:integer;
+begin
+out "Print  function";
+h:=1;
+while h <10
+do
+if h <>10 then out "World";
+h:=h+1;
+else
+ out "Apocalypse";
+end;
+{Procedure}
+procedure WhileCond;
+var z : integer;
+begin
+out "WhileCond function";
+z:=0;
+while z<>6
+do
+ z:=z+1;
+if z==6 then out "Ok"
+else out "Error"
+end;
+{Main Block}
+begin 
+out"Main Block Results";
+Alpha(15);
+WhileCond();
+Priht();
+{Inner Block}
+begin
+result := x+y;
+   end;
+end.  
